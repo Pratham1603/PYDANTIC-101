@@ -1,3 +1,5 @@
+# Use When: custom validation and transformation a SINGLE field in a model 
+
 from pydantic import BaseModel, EmailStr, AnyUrl, Field, field_validator #field_validator
 from typing import List, Dict, Optional, Annotated
 
