@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, computed_field
+from pydantic import BaseModel, EmailStr, computed_field # computed_field
 from typing import List, Dict
 
 class Patient(BaseModel):
@@ -12,6 +12,8 @@ class Patient(BaseModel):
     allergies: List[str]
     contact_details: Dict[str, str]
 
+
+    # Here we go!
     @computed_field
     @property
     def bmi(self) -> float:
