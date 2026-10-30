@@ -15,7 +15,7 @@ class Patient(BaseModel):
 
 
     # Here we go!
-    @model_validator(mode='after')
+    @model_validator(mode='after') # mode = 'after' means this validation will be applied after all the field validations are done
     @classmethod
     def validate_patient_emergency_contact(cls, model):
 
