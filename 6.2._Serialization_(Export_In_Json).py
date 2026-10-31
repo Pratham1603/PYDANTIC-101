@@ -30,7 +30,6 @@ print(temp)
 print(type(temp))
 
 
-
 temp1 = patient1.model_dump_json(include={'address'})
 print(temp1)
 
