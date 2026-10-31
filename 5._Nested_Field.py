@@ -21,16 +21,14 @@ address_dict = {'city': 'mumbai', 'state': 'maharashtra', 'pin': '421503'}
 
 address1 = Address(**address_dict)   # <------------------------------------------------object of address model
 
-patient_dict = {'name': 'nitish', 'gender': 'male', 'age': 35, 'address': address1}
+patient_dict = {'name': 'pratham', 'gender': 'male', 'age': 20, 'address': address1}
 
 patient1 = Patient(**patient_dict) # <--------------------------------------------------object of patient model
 
-temp = patient1.model_dump(include={'address'})
-
-print(type(temp))
-
-
-
+print(patient1)
+print(patient1.address.city) # <--------------------------------------------------accessing nested field
+print(patient1.address.state) # <-------------------------------------------------accessing nested field
+print(patient1.address.pin) # <---------------------------------------------------accessing nested field
 
 
 
