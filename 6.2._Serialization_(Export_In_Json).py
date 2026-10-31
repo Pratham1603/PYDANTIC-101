@@ -1,8 +1,4 @@
-# Export pydantic model to dictionary using model_dump_json() method
-
-# Nested Field - use When: you want to have a field in your model that is itself another Pydantic model. 
-# useful for complex data and hierarchical data.
-# e.g address has various things in int if we create a single varible then it will be difficult to manager(extract e.g city , state, pin etc) but in nested we create a model for address and use it in patient model as a field.
+# Export pydantic model to JSON using model_dump_json() method
 
 from pydantic import BaseModel
 
@@ -29,20 +25,20 @@ patient1 = Patient(**patient_dict) # <------------------------------------------
 
 ###########################################################################
 
-temp = patient1.model_dump()
+temp = patient1.model_dump_json()
 print(temp)
 print(type(temp))
 
 
 
-temp1 = patient1.model_dump(include={'address'})
+temp1 = patient1.model_dump_json(include={'address'})
 print(temp1)
 
-temp2 = patient1.model_dump(exclude=['name', 'gender'])
+temp2 = patient1.model_dump_json(exclude=['name', 'gender'])
 print(temp2)
 
-temp3 = patient1.model_dump(exclude={'address'})
+temp3 = patient1.model_dump_json(exclude={'address'})
 print(temp3)
 
-temp4 = patient1.model_dump(include={'address': {'city', 'pin'}})
+temp4 = patient1.model_dump_json(include={'address': {'city', 'pin'}})
 print(temp4)

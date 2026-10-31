@@ -1,5 +1,6 @@
 # Export pydantic model to dictionary using model_dump() method
 
+
 from pydantic import BaseModel
 
 class Address(BaseModel):
