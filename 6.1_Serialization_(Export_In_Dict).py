@@ -1,9 +1,5 @@
 # Export pydantic model to dictionary using model_dump() method
 
-# Nested Field - use When: you want to have a field in your model that is itself another Pydantic model. 
-# useful for complex data and hierarchical data.
-# e.g address has various things in int if we create a single varible then it will be difficult to manager(extract e.g city , state, pin etc) but in nested we create a model for address and use it in patient model as a field.
-
 from pydantic import BaseModel
 
 class Address(BaseModel):
