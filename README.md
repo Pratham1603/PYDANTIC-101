@@ -1,5 +1,17 @@
-<img width="640" height="162" alt="Image" src="https://github.com/user-attachments/assets/703fec2e-2ac4-467d-abaa-d345e2b1422d" />
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/703fec2e-2ac4-467d-abaa-d345e2b1422d"
+    alt="Project Banner"
+    width="85%"
+  />
+</p>
 
----
+<br/>
 
-<img width="680" height="827" alt="Image" src="https://github.com/user-attachments/assets/1e75d36b-5787-4af7-817c-2d7616fa3344" />
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/b26458ca-3246-422e-a203-d48e7b3d7682"
+    alt="Project Preview"
+    width="90%"
+  />
+</p>
